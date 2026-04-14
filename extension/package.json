@@ -1,0 +1,45 @@
+{
+  "name": "gemma4-direct-connector",
+  "displayName": "Gemma 4 Direct Connector",
+  "description": "Native Gemma 4 integration for Antigravity via local Ollama engine.",
+  "version": "1.0.0",
+  "publisher": "an-bon",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "AI",
+    "Programming Languages"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "gemma4-sidebar",
+          "title": "Gemma 4",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "gemma4-sidebar": [
+        {
+          "type": "webview",
+          "id": "gemma4-chat-view",
+          "name": "Gemma 4 Chat",
+          "visibility": "visible"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "echo 'No compile needed'",
+    "lint": "echo 'Skipping lint'"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.5"
+  }
+}
