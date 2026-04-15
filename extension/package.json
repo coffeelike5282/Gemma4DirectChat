@@ -2,7 +2,7 @@
   "name": "gemma4-direct-connector",
   "displayName": "Gemma 4 Direct Connector",
   "description": "Native Gemma 4 integration for Antigravity via local Ollama engine.",
-  "version": "1.0.0",
+  "version": "2.1.4",
   "publisher": "an-bon",
   "engines": {
     "vscode": "^1.75.0"
@@ -28,6 +28,7 @@
           "type": "webview",
           "id": "gemma4-chat-view",
           "name": "Gemma 4 Chat",
+          "icon": "media/icon.svg",
           "visibility": "visible"
         }
       ]
